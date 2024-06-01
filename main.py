@@ -155,7 +155,7 @@ async def account_login(bot: Client, m: Message):
         count = int(raw_text)
     for i in range(arg, len(links)):
       try:
-        url = links[i][1]
+        #url = links[i][1]
         name = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@","").replace("*","").replace(".","").strip()
       except IndexError:
         pass
